@@ -1,0 +1,91 @@
+.content-info-error {
+  font-size: 1.2rem;
+  letter-spacing: 1.6px;
+  display: grid;
+  place-items: center;
+  /* height: 90vh; */
+  font-family: "Montserrat", sans-serif !important;
+ 
+}
+
+.content-error{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  width: 70%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+  box-shadow: 0 0 20px rgba(51, 51, 51, 0.733);
+  margin-top: 5rem;
+}
+
+.logo-404 {
+  color: rgb(228, 86, 86);
+}
+
+.info-error {
+  margin: 0.5rem 0 0.5rem 0;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+
+.info-error-message {
+  text-align: center;
+  font-weight: 600;
+  color: black;
+  padding: 1rem;
+  letter-spacing: 0.3rem;
+  line-height: 1.7rem;
+
+  margin-bottom: 1rem;
+}
+
+.btn-error-container {
+  margin: 1rem 0 1rem 0;
+  cursor: pointer;
+}
+
+.btn-error {
+  text-decoration: none;
+  color: #fff;
+  background-color: #4e54c8fd;
+  padding: 1rem;
+  border-radius: 10px;
+}
+.btn-error:hover {
+  background-color: #4e54c8d7;
+}
+
+.icon-check {
+  margin: .9rem 0 .9rem 0;
+  text-align: center;
+  color: rgb(228, 86, 86);
+  font-size: 30px;
+  border: 2px solid  rgb(228, 86, 86);
+  border-radius: 50%;
+  padding: 1.2rem;
+}
+
+
+@media screen and (max-width: 869px) {
+  .info-error-message {
+    letter-spacing: 0.2rem;
+    line-height: 1.9rem;
+    text-align: center;
+    font-size: 1rem;
+    /* font-weight: 600; */
+  }
+
+
+  .content-error{
+    margin-top: 1.4rem;
+    margin-bottom: 1rem;
+
+  }
+ 
+
+ 
+}

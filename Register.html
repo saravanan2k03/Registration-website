@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/Regsiter.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;600&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="./css/animationbackground.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+  <title>Register</title>
+</head>
+
+<body>
+  <div class="area">
+    <ul class="circles">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+
+  <div class="container-register bg-back"></div>
+
+  <section class="bg-image">
+    <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+
+      <div class="container h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+
+          <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+            <div class="card slideleft mt-5" style="border-radius: 15px; background-color: #8f94fbba">
+              <div class="card-body p-5">
+                <h2 class="text-uppercase font-secondary text-white logo-join mb-4 mt-3 text-center">
+                  Event Registration
+                </h2>
+                <h5 class="font-secondary text-white mb-3 text-center">
+                  (Each Team Can Register Maximum of 3 Events)
+                </h5>
+
+                <form autocomplete="off" action="connection.php" method="post" validate>
+
+
+                  <div class="hidden">
+                    <div class="form-outline mb-4">
+                      <input type="text" placeholder="Member one" id="form3Example1cg"
+                        class="form-control input-f no-border form-control-lg" name="memberone" />
+                    </div>
+
+                    <div class="form-outline mb-4">
+                      <input type="text" placeholder="Member two (optional)" id="form3Example1cg"
+                        class="form-control input-f no-border form-control-lg" name="membertwo" />
+                    </div>
+
+                    <div class="form-outline mb-4">
+                      <input type="text" id="form3Example1cg" placeholder="Member Three (optional)"
+                        class="form-control input-f no-border form-control-lg" name="memberthree" />
+                    </div>
+                    <div class="form-outline mb-4">
+                      <input placeholder="Your Team Name" type="text" id="form3Example1cg"
+                        class="no-border form-control input-f form-control-lg" name="teamname" />
+                      <!-- <label class="form-label" for="form3Example1cg">Your Name</label> -->
+                    </div>
+                  </div>
+
+                  <div class="form-outline mb-4">
+                    <input placeholder="Your College Name" type="text" id="form3Example1cg"
+                      class="no-border form-control your-name input-f form-control-lg" name="collegename" />
+                    <!-- <label class="form-label" for="form3Example1cg">Your Name</label> -->
+                  </div>
+
+                  <div class="form-outline mb-4">
+                    <input placeholder="Your Email" type="email" id="form3Example3cg"
+                      class="no-border form-control input-f form-control-lg" name="email" />
+                    <!-- <label class="form-label" for="form3Example3cg">Your Email</label> -->
+                  </div>
+
+                  <!-- <div class="form-outline mb-4">
+                                        <input type="text"   id="form3Example4cg"
+                                            class="form-control form-control-lg" />
+                                        <label class="form-label" for="form3Example4cg">Phone Number</label>
+                                    </div> -->
+
+                  <div class="form-outline mb-4">
+                    <input placeholder="Phone Number" type="text" maxlength="10" id=""
+                      class="form-control no-border input-f form-control-lg" name="phoneno" />
+                    <!-- <label class="form-label" for="">Phone Number</label> -->
+                  </div>
+
+                  <div class="events-container">
+                    <div class="info-container">
+                      <p id="para">Events</p>
+                    </div>
+
+                    <div class="content-register-check">
+                      <div class="form-check custom-check">
+                        <input class="form-check-input" type="checkbox" value="KnowledgeBowl" id="flexCheckDefault"
+                          name="check" onClick="return myfun()" />
+                        <label class="form-check-label label-check" for="flexCheckDefault">
+                          Knowledge Bowl (Maximum 3 Members)
+                        </label>
+                      </div>
+                      <div class="form-check custom-check">
+                        <input class="form-check-input" type="checkbox" value="Quizardry" id="flexCheckChecked"
+                          name="checkquiz" onClick="return myfun()" />
+                        <label class="form-check-label label-check" for="flexCheckChecked">
+                          Quizardry (Maximun 2 Members)
+                        </label>
+                      </div>
+                      <div class="form-check custom-check">
+                        <input class="form-check-input" type="checkbox" value="TechEcho" id="flexCheckDefault"
+                          name="checkecho" onClick="return myfun()" />
+                        <label class="form-check-label label-check" for="flexCheckDefault">
+                          Tech Echo (Maximun 1 Member)
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="content-register-check">
+                      <div class="form-check custom-check">
+                        <input class="form-check-input" type="checkbox" value="CyberEthnicity" id="flexCheckChecked"
+                          name="checkcyber" onClick="return myfun()" />
+                        <label class="form-check-label label-check" for="flexCheckChecked">
+                          Cyber Ethnicity (Maximun 1 Member)
+                        </label>
+                      </div>
+                      <div class="form-check custom-check">
+                        <input class="form-check-input" type="checkbox" value="TechVein" id="flexCheckDefault"
+                          name="checktech" onClick="return myfun()" />
+                        <label class="form-check-label label-check" for="flexCheckDefault">
+                          Tech Vein (Maximun 3 Member)
+                        </label>
+                      </div>
+                      <div class="form-check custom-check">
+                        <input class="form-check-input" type="checkbox" value="WebsiteDesign" id="flexCheckChecked"
+                          name="checkwebsite" onClick="return myfun()" />
+                        <label class="form-check-label label-check" for="flexCheckChecked">
+                          Website Design (Maximun 1 Member)
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="d-flex justify-content-center mt-5">
+                    <button type="submit" class="btn btn-h gradient-btn w-100 btn-block btn-lg">
+                      Register
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <audio src="./audio/theme.mp3" id="my_audio" loop="loop" autoplay="autoplay" allowscriptaccess="always"
+    allow="autoplay"></audio>
+
+  <script type="text/javascript">
+    window.onload = function () {
+      document.getElementById("my_audio").play();
+    };
+  </script>
+
+  <div>
+    <span id="notvalid"></span>
+  </div>
+
+
+  <script type="text/javascript">
+
+    function myfun() {
+      var a = document.getElementById('flexCheckChecked');
+      var newvar = 0;
+      var count;
+
+      for (count = 0; count < a.length; count++) {
+        if (a[count].checked == true) {
+          newvar = newvar + 1;
+        }
+      }
+      if (newvar >= 4) {
+        document.getElementById('notvalid').innerHTML = "**** Please select only three"
+        return false;
+      }
+    }
+  </script>
+
+
+
+  <script src="../saro/js/Register.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
